@@ -1,0 +1,361 @@
+/* 
+
+    font-family: 'Roboto', sans-serif;
+
+    Pallete Colours
+    #760788
+    #AA45BB
+    #000000
+    #ffffff
+    
+
+*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+/* Main Page */
+
+.header_main{
+    width: 100%;
+    height: 135px;
+}
+.container_nav_image{
+    display: flex;
+    height: 135px;
+    padding: 20px;
+    justify-content: space-evenly;
+}
+.container_image_and_name{
+    width: 50%;
+    display: flex;
+}
+.container_image_and_name > .image_logo > img{
+    width: 120px;
+    position: relative;
+    left: 50px;
+    transition-property: transform;
+    transition-duration: 0.5s;
+}
+.container_image_and_name > .image_logo > img:hover{
+    cursor: pointer;
+    transform: rotate(-10deg);
+}
+.container_image_and_name .name_hospital > h2{
+    width: 300px;
+    position: relative;
+    left: 80px;
+    top: 45px;
+}
+.container_nav_bar{
+    width: 50%;
+}
+.nav_bar > ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+.nav_bar > ul > li{
+    padding: 0px 20px;
+    margin-top: 45px;
+}
+.nav_bar > ul > li > a{
+    padding: 5px 30px;
+    border: 2px solid #AA45BB;
+    color: #AA45BB;
+    border-radius: 6px;
+    transition-property: background-color, color;
+    transition-duration: 0.4s;
+}
+.nav_bar > ul > li > a:hover{
+    background-color: #AA45BB;
+    color: #ffffff;
+}
+.nav_bar > ul > li > .button_sign_in{
+    background-color: #760788;
+    color: #ffffff;
+}
+.container_main_view{
+    display: flex;
+    width: 100%;
+    margin-top: 1%;
+}
+.container_title{
+    width: 50%;
+}
+.container_title > h1{
+    width: 100%;
+    font-size: 120px;
+    font-weight: 700;
+    font-style: italic;
+    position: relative;
+    top: 90px;
+    left: 40px;
+    color: #000000;
+    text-shadow: 0px 0px 10px #AA45BB;
+    
+}
+.imagen_z{
+    position: absolute;
+    z-index: -1;
+    width: 50vw;
+    top: 100px;
+    height: 800px;
+}
+.container_image_main_view{
+    width: 50%;
+}
+.container_image_main_view > img{
+    width: 95%;
+    height: 800px;
+    border-radius: 30px;
+}
+.footer_main_page{
+    width: 100%;
+    height: 220px;
+    padding-top:90px;
+    background-color: #760788;
+}
+.footer_main_page > ul{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 35px;
+}
+.footer_main_page > ul > li > a{
+    color: #ffffff;
+}
+.footer_main_page > ul > li > a:hover{
+    color: #000000;
+}
+.container_right{
+    width: 100%;
+}
+hr{
+    height: 3px;
+    background-color: #ffffff;
+    margin-top: 10px;
+}
+.container_right > p{
+    color: #ffffff;
+    padding: 20px 0px;
+    margin-left: 38%;
+}
+
+
+/* Log In Page  */
+
+.container_sign_in_email{
+    width: 50%;
+
+}
+.container_form_Email{
+    width: 100%;
+}
+.container_form_Email > form{
+    width: 80%;
+    margin: 150px auto;
+    border:  2px solid #760788;
+    padding: 30px 50px;
+    border-radius: 10px;
+}
+.container_form_Email > form > .container_title_form,
+.container_form_Email > form > .container_sign_in_google,
+.container_form_Email > form > .separtor_line{
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+.container_form_Email > form > .separtor_line{
+    display: flex;
+    justify-content: space-evenly;
+}
+.container_form_Email > form > .separtor_line > .line_1,
+.container_form_Email > form > .separtor_line > .line_2{
+    width: 50%; 
+    border-bottom: 1px solid;
+    position: relative;
+    top: -8px;
+}
+.container_form_Email > form > .separtor_line > p{
+    padding: 0 10px;
+}
+.container_form_Email > form > .container_email,
+.container_form_Email > form > .container_password,
+.container_form_Email > form > .contaienr_actions{
+    width: 100%;
+    padding: 20px;
+}
+.container_form_Email > form > .container_email{
+    display: block;
+}
+.container_form_Email > form > .container_password > label{
+    display: block;
+}
+.container_form_Email > form > .container_password > label{
+    padding: 5px 0;
+
+}
+.container_form_Email > form > .container_password > input{
+    width: 100%;
+    height: 35px;
+    outline: none;
+    border:  2px solid #760788;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 5%;
+}
+.container_email > select{
+    width: 100%;
+    height: 35px;
+    outline: none;
+    border:  2px solid #760788;
+    border-radius: 5px;
+    padding: 8px;
+}
+.container_form_Email > form > .container_email > label{
+    padding: 5px 0px;
+}
+
+.container_form_Email > form > .container_email > input{
+    width: 100%;
+    height: 35px;
+    outline: none;
+    border:  2px solid #760788;
+    border-radius: 5px;
+    padding: 10px;
+}
+.container_form_Email > form > .container_title_form > h2{
+    color: #AA45BB;
+    font-weight: 900;
+    font-size: 2em;
+}
+.container_form_Email > form > .contaienr_actions > button{
+    display: block;
+    width: 130px;
+    padding: 5px 25px;
+    margin: 0 auto;
+    margin-bottom: 10%;
+    border-radius: 5px;
+    border: 2px solid #760788;
+    background-color: #760788;
+    color: #ffffff;
+    cursor: pointer;
+    transition-property: background-color;
+    transition-duration: 0.3s;
+}
+.container_form_Email > form > .contaienr_actions > button:hover{
+    background-color: #AA45BB;
+}
+.container_form_Email > form > .contaienr_actions > button >a{
+    color: #ffffff;
+}
+
+.container_form_Email > form > .contaienr_actions > a{
+    width: 100%;
+    margin: 0 27%;
+    color: #AA45BB;
+}
+.container_form_Email > form > .contaienr_actions > a:hover{
+    color: #760788;
+    text-decoration: underline;
+}
+.contaienr_actions_2{
+    width: 100%;
+}
+.container_actions_2 > a{
+    width: 130px;
+    padding: 5px 25px;
+    margin: 0 15%;
+    margin-bottom: 10%;
+    border-radius: 5px;
+    border: 2px solid #760788;
+    background-color: #760788;
+    color: #ffffff;
+    cursor: pointer;
+    transition-property: background-color;
+    transition-duration: 0.3s;
+}
+.container_actions_2 > a:hover{
+    background-color: #AA45BB;
+}
+.container_sign_in_email_2{
+    margin-top: -100px !important;
+}
+.container_image_main_view_2 > img{
+    height: 1100px !important;
+}
+
+/* Home Patient Page */
+
+.header_main_patient{
+    width: 100%;
+    height: 135px;
+}
+.container_nav_image_patient{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+.container_nav_image_patient > .container_image{
+    width: 25%;
+}
+.container_nav_image_patient > .container_image > img{
+    width: 120px;
+    position: relative;
+    left: 50px;
+    transition-property: transform;
+    transition-duration: 0.5s;
+}
+.container_nav_image_patient > .container_image > img:hover{
+    cursor: pointer;
+    transform: rotate(-10deg);
+}
+.container_nav_image_patient > .container_nav_bar_patient{
+    width: 75%;
+}
+
+.container_nav_image_patient > .container_nav_bar_patient > .nav_bar_patient >ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container_nav_principal{
+    display: flex;
+    width: 60%;
+    margin-top: 4%;
+}
+.container_profile_image_name{
+    display: flex;
+    width: 100%;
+}
+.container_nav_principal > li > a{
+    padding: 5px 14px;
+    margin: 10px 30px;
+    font-size: 1.26em;
+    color: #000000;
+}
+.home_information{
+    color: #000000;
+    font-weight: 700;
+}
+.container_profile_image_name > .container_image_patient > img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+
+}
+.container_profile_image_name > .container_image_patient{
+    margin-top: 13px;
+}
+.container_profile_image_name > .container_name_patient{
+    margin-top: 40px;
+    margin-left: 30px;
+}
