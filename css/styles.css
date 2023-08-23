@@ -341,6 +341,14 @@ hr{
     margin: 10px 30px;
     font-size: 1.26em;
     color: #000000;
+    border-radius: 5px;
+    border: 1px solid #ffffff;
+    transition-property: border-color;
+    transition-duration: 0.3s;
+}
+.container_nav_principal > li > a:hover{
+    border-color: #760788;
+
 }
 .home_information{
     color: #000000;
@@ -369,4 +377,153 @@ hr{
     position: absolute;
     top: 64px;
     right: 60px;
+}
+
+.container_title_profile{
+    width: 100%;
+    height: 100px;
+    margin-top: 1%;
+    background-color: #760788;
+    border-left: 15px solid #000000;
+}
+.container_title_profile > h2{
+    width: 200px;
+    position: absolute;
+    top: 180px;
+    left: 90px;
+    color: #ffffff;
+    font-size: 2em;
+}
+.container_profile_photo{
+    width: 40%;
+    height: 180px;
+    background-color: #760788;
+    margin-top: 2%;
+    display: flex;
+    margin-left: 8%;
+    border-radius: 22px 75px 75px 22px;
+}
+.container_image_profile_edit{
+    width: 135px;
+    height: 135px;
+    border-radius: 70px;
+    background-color: #ffffff;
+    margin-left: 15%;
+    margin-top: 3.5%;
+}
+.container_image_profile_edit > img{
+    width: 110px;
+    height: 110px;
+    border-radius: 80px;
+    margin-top: 9.3%;
+    margin-left: 9.5%;
+}
+.container_name_profile_edit{
+    width: 350px;
+    margin-top: 13%;
+    margin-left: 3%;
+    color: #ffffff;
+    font-size: 1.2em;
+}
+
+.container_information{
+    width: 80%;
+}
+
+.container_information{
+    width: 80%;
+    margin: 2% 8.2%;
+}
+.container_information > .container_input_label_information{
+    width: 100%;
+    padding: 20px 0px;
+    display: flex;
+}
+.container_information > .container_input_label_information > label{
+    font-size: 1.3em;
+    width: 50%;
+}
+.container_information > .container_input_label_information > label > h3{
+    margin-left: 5%;
+    margin-top: 3px;
+    font-weight:normal;
+}
+.container_information > .container_input_label_information > input,
+.container_information > .container_input_label_information > select{
+    width: 50%;
+    height: 40px;
+    border-radius: 8px;
+    outline: none;
+    background-color: #AA45BB;
+    color: #ffffff;
+    border: none;
+    font-size: 1.2em;
+    padding: 0 20px;
+}
+.container_information > hr{
+    margin-top: 0px;
+}
+.container_input_label_information > a{
+    width: 150px;
+    background-color: #760788;
+    margin: 0 20px;
+    font-size: 1.2em;
+    color: #ffffff;
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px 0;
+    transition-property: color,background-color;
+    transition-duration: 0.3s;
+}
+.container_input_label_information_buttons{
+    width: 400px !important;
+    position: relative;
+    left: 38%;
+    top: 10px;    
+}
+.container_input_label_information > .cancel_button_information{
+    background-color: transparent;
+    color: #AA45BB;
+    border: 1px solid #760788; 
+}
+.container_input_label_information > a:hover{
+    color: #ffffff;
+    background-color: #AA45BB;   
+}
+
+/* Home Page patient */
+
+.container_title_profile > h2{
+    width: 400px;
+}
+.container_appointment{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+.container_appointment > .container_general_appointment,
+.container_appointment > .container_special_appointment
+{
+    width: 50%;
+    padding: 50px 0px;
+    text-align: center;
+}
+.container_appointment > .container_general_appointment > img,
+.container_appointment > .container_special_appointment > img{
+    width: 500px;
+}
+.container_appointment > .container_general_appointment > h4,
+.container_appointment > .container_special_appointment > h4{
+    font-size: 2em;
+}
+.container_appointment > .container_general_appointment > h4 > a,
+.container_appointment > .container_special_appointment > h4 > a{
+    color: #000000;
+    transition-property: color;
+    transition-duration: 0.3s;
+}
+.container_appointment > .container_general_appointment > h4 > a:hover,
+.container_appointment > .container_special_appointment > h4 > a:hover{
+    color: #760788;
 }
