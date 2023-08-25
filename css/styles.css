@@ -114,7 +114,7 @@
 }
 .container_image_main_view > img{
     width: 95%;
-    height: 800px;
+    height: 750px;
     border-radius: 30px;
 }
 .footer_main_page{
@@ -371,7 +371,11 @@ hr{
     width: 15px;
     height: 15px;
     cursor: pointer;
-
+    transition-property: transform;
+    transition-duration: 0.3s;
+}
+.container_ico_arrow > img:active{
+    transform: rotate(180deg);
 }
 .container_ico_arrow{
     position: absolute;
@@ -527,3 +531,49 @@ hr{
 .container_appointment > .container_special_appointment > h4 > a:hover{
     color: #760788;
 }
+
+/* General Appointment Page */
+
+.container_general_appointment_request{
+    width: 100%;
+    height: auto;
+}
+.container_general_appointment_2{
+    width: 80%;
+    height: auto;
+    margin: 5% auto;
+    border: 2px solid #760788;
+    padding: 50px;
+    border-radius: 5px;
+}
+.container_general_appointment_2 > .container_title_general_appointment{
+    width: 100%;
+}
+.container_general_appointment_2 > .container_title_general_appointment > h3{
+    font-size: 2em;
+    color: #760788;
+}
+.container_general_appointment_2 > .container_information_schedule {
+    margin: 5% 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+.container_general_appointment_2 > .container_information_schedule > .container_information_doctor{
+    text-align: center;
+}
+.container_general_appointment_2 > .container_information_schedule > .container_information_doctor > img{
+    width: 180px;
+    height: 180px;
+    border-radius: 100px; 
+}
+.container_general_appointment_2 > .container_information_schedule > .container_information_doctor > h5{
+    font-size: 1.4em;
+    margin-top: 10%;
+}
+.container_general_appointment_2 > .container_information_schedule > .container_information_doctor > p{
+    font-size: 1.3em;
+    margin-top: 5%;
+}
+
+
+/* Special Appointment Page */
