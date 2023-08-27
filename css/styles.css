@@ -89,6 +89,7 @@
 }
 .container_title{
     width: 50%;
+    margin-bottom: 13.4%;
 }
 .container_title > h1{
     width: 100%;
@@ -150,20 +151,36 @@ hr{
 
 
 /* Log In Page  */
-
+.container_sign_in_password_hidden{
+    display: none;
+}
 .container_sign_in_email{
+    display: block;
     width: 50%;
-
+}
+.container_sign_in_email_hidden{
+    display: none;
+}
+.container_sign_in_password{
+    display: block;
+    width: 50%;
 }
 .container_form_Email{
     width: 100%;
+    
 }
 .container_form_Email > form{
     width: 80%;
-    margin: 150px auto;
+    margin: 150px auto 10%;
     border:  2px solid #760788;
     padding: 30px 50px;
     border-radius: 10px;
+}
+.container_form_Email > .form_email{
+    margin: 130px auto 21.3%;
+}
+.container_form_Email > .form_email_password{
+    margin: 160px auto 28.7%;
 }
 .container_form_Email > form > .container_title_form,
 .container_form_Email > form > .container_sign_in_google,
@@ -208,8 +225,12 @@ hr{
     outline: none;
     border:  2px solid #760788;
     border-radius: 5px;
-    padding: 10px;
+    padding: 5px 15px;
     margin-bottom: 5%;
+    font-size: 1.1em;
+}
+.container_email{
+    position: relative;
 }
 .container_email > select{
     width: 100%;
@@ -217,7 +238,27 @@ hr{
     outline: none;
     border:  2px solid #760788;
     border-radius: 5px;
-    padding: 8px;
+    padding: 5px 15px;
+    -webkit-appearance: none;
+    appearance: none;
+    font-size: 1.1em;
+    
+}
+.container_email > select:focus{
+    outline: none;
+    box-shadow: 0 0 5px -1px #AA45BB;
+}
+.container_email > select > option{
+    background-color: #760788;
+    outline: none;
+    color: #ffffff;
+}
+.container_email > .arrow_down{
+    width: 12px;
+    position: absolute;
+    top: 52px;
+    right: 28px;
+    z-index: 1;
 }
 .container_form_Email > form > .container_email > label{
     padding: 5px 0px;
@@ -229,14 +270,15 @@ hr{
     outline: none;
     border:  2px solid #760788;
     border-radius: 5px;
-    padding: 10px;
+    padding: 4px 15px;
+    font-size: 1.1em;
 }
 .container_form_Email > form > .container_title_form > h2{
     color: #AA45BB;
     font-weight: 900;
     font-size: 2em;
 }
-.container_form_Email > form > .contaienr_actions > button{
+.container_form_Email > form > .contaienr_actions > .next_page{
     display: block;
     width: 130px;
     padding: 5px 25px;
@@ -249,23 +291,46 @@ hr{
     cursor: pointer;
     transition-property: background-color;
     transition-duration: 0.3s;
+    text-align: center;
 }
-.container_form_Email > form > .contaienr_actions > button:hover{
-    background-color: #AA45BB;
-}
-.container_form_Email > form > .contaienr_actions > button >a{
-    color: #ffffff;
-}
-
-.container_form_Email > form > .contaienr_actions > a{
-    width: 100%;
-    margin: 0 27%;
-    color: #AA45BB;
-}
-.container_form_Email > form > .contaienr_actions > a:hover{
+.container_form_Email > form > .contaienr_actions > .dont_have_account{
     color: #760788;
+    margin-left: 28%;
+}
+.container_form_Email > form > .contaienr_actions > .dont_have_account:hover{
     text-decoration: underline;
 }
+.container_form_Email > form > .contaienr_actions > .next_page:hover{
+    background-color: #AA45BB;
+}
+.container_password{
+    position: relative;
+}
+
+.hidden_password{
+    display: block;
+}
+.hidden_password_show{
+    display: none;
+}
+.hidden_password_hidden{
+    display: none;
+}
+.hidden_password_show_password{
+    display: block;
+}
+.container_image_hidden_show_password{
+    position: absolute;
+    left: 78%;
+    top: 41.5%;
+}
+.container_image_hidden_show_password > img{
+    width: 28px;
+    position: absolute;
+    left: 50px;
+    cursor: pointer;
+}
+
 .contaienr_actions_2{
     width: 100%;
 }
@@ -289,7 +354,7 @@ hr{
     margin-top: -100px !important;
 }
 .container_image_main_view_2 > img{
-    height: 1100px !important;
+    height: 1060px !important;
 }
 
 /* Home Patient Page */
@@ -374,14 +439,56 @@ hr{
     transition-property: transform;
     transition-duration: 0.3s;
 }
-.container_ico_arrow > img:active{
-    transform: rotate(180deg);
-}
 .container_ico_arrow{
     position: absolute;
     top: 64px;
-    right: 60px;
+    right: 40px;
+    text-align: right;
 }
+.container_ico_arrow > img{
+    position: relative;
+    right: 25px;
+}
+.arrow_image{
+    transform: rotate(180deg);
+}
+.container_nav_options_no_visible{
+    display: none;
+}
+.container_nav_options{
+    display: block;
+    position: relative;
+    top: 30px;
+    border-radius: 5px;
+    right: 20px;
+    width: 200px;
+    padding: 10px 20px;
+    background-color: #AA45BB;
+    height: auto;
+    border: 2px solid #000000;
+
+}
+.container_nav_options > ul > li{
+    padding: 10px 0;
+    margin: 10px 0;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #760788;
+    border: 1px solid #000000;
+}
+.container_nav_options > ul > li:hover{
+    background-color: #ffffff;
+}
+.container_nav_options > ul > li > a {
+    color: #ffffff;
+    padding: 10px 40px;
+}
+.container_nav_options > ul > li > a:hover {
+    color: #000000;
+
+    padding: 5% 40px;
+}
+
 
 .container_title_profile{
     width: 100%;
