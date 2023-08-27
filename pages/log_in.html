@@ -44,11 +44,11 @@
     </header>
     <main class="main">
         <div class="container_main_view">
-            <!-- <div class="container_sign_in_email">
+            <div id="hideContainerEmail" class="container_sign_in_email">
                 <div class="container_form_Email">
                     <form action="" class="form_email">
                         <div class="container_title_form">
-                            <h2>Log In In</h2>
+                            <h2>Log In</h2>
                         </div>
                         <div class="container_sign_in_google">
                             <a href="">Log In with Google</a>
@@ -65,16 +65,16 @@
                             <input type="email" name="email" id="emailPatient" placeholder="example@gmail.com">
                         </div>
                         <div class="contaienr_actions">
-                            <button type="submit">Log In</button>
-                            <a href="../pages/">You don't have an account?</a>
+                            <a id="buttonChangeContainer" class="next_page"> Next</a>
+                            <a class="dont_have_account" href="../pages/sign_in.html">You don't have an account?</a>
                         </div>
                     </form>
                 </div>
-            </div> -->
+            </div>
     
-            <div class="container_sign_in_email">
+            <div id="showContainerPassword" class=" container_sign_in_password_hidden">
                 <div class="container_form_Email">
-                    <form action="" class="form_email">
+                    <form action="" class="form_email_password">
                         <div class="container_title_form">
                             <h2>Log In</h2>
                         </div>
@@ -89,20 +89,21 @@
                             <div class="line_2"></div>
                         </div>
                         <div class="container_password">
-                            <label for="">Password*</label>
+                            <label for="password" class="label_password">Password*</label>
                             <input type="password" name="password" id="password">
-                            <div>
-                                <img src="" alt="Mostrar / Ocultar Contraseña">
+                            <div class="container_image_hidden_show_password">
+                                <img id="showPassword" class="hidden_password" src="../assets/img/ocultar.png" alt="Mostrar / Ocultar Contraseña"> 
+                                <img id="hiddenPassword" class="hidden_password_show" src="../assets/img/mostrar.png" alt="Mostrar / Ocultar Contraseña"> 
                             </div>
                         </div>
                         <div class="container_actions_2">
-                            <a class="" href="" >Back</a>
-                            <a href="">Log In</a>
+                            <a id="buttonReturnToEmail" class="">Back</a>
+                            <a href="./home_patient.html">Log In</a>
                         </div>
                     </form>
                 </div>
             </div> 
-            <div class="container_image_main_view container_image_main_view_2">
+            <div class="container_image_main_view">
                 <img src="../assets/img/Imagen Fondo.png" alt="Imágen de Pasillo del Hospital">
             </div>
         </div>
@@ -114,7 +115,7 @@
                 <a href="">Privacy Polity</a>
             </li>
             <li>
-                <a href="">Registration Form</a>
+                <a href="../pages/sign_in.html">Registration Form</a>
             </li>
             <li>
                 <a href="">Document</a>
@@ -125,5 +126,6 @@
             <p>@ 2023 Bogota's Health Pediatric. All rights reserved</p>    
         </div>   
     </footer>
+    <script type="module" src="../dist/main.js"></script>
 </body>
 </html>

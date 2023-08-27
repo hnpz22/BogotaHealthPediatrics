@@ -89,6 +89,7 @@
 }
 .container_title{
     width: 50%;
+    margin-bottom: 13.4%;
 }
 .container_title > h1{
     width: 100%;
@@ -114,7 +115,7 @@
 }
 .container_image_main_view > img{
     width: 95%;
-    height: 800px;
+    height: 750px;
     border-radius: 30px;
 }
 .footer_main_page{
@@ -150,20 +151,36 @@ hr{
 
 
 /* Log In Page  */
-
+.container_sign_in_password_hidden{
+    display: none;
+}
 .container_sign_in_email{
+    display: block;
     width: 50%;
-
+}
+.container_sign_in_email_hidden{
+    display: none;
+}
+.container_sign_in_password{
+    display: block;
+    width: 50%;
 }
 .container_form_Email{
     width: 100%;
+    
 }
 .container_form_Email > form{
     width: 80%;
-    margin: 150px auto;
+    margin: 150px auto 10%;
     border:  2px solid #760788;
     padding: 30px 50px;
     border-radius: 10px;
+}
+.container_form_Email > .form_email{
+    margin: 130px auto 21.3%;
+}
+.container_form_Email > .form_email_password{
+    margin: 160px auto 28.7%;
 }
 .container_form_Email > form > .container_title_form,
 .container_form_Email > form > .container_sign_in_google,
@@ -208,8 +225,12 @@ hr{
     outline: none;
     border:  2px solid #760788;
     border-radius: 5px;
-    padding: 10px;
+    padding: 5px 15px;
     margin-bottom: 5%;
+    font-size: 1.1em;
+}
+.container_email{
+    position: relative;
 }
 .container_email > select{
     width: 100%;
@@ -217,7 +238,27 @@ hr{
     outline: none;
     border:  2px solid #760788;
     border-radius: 5px;
-    padding: 8px;
+    padding: 5px 15px;
+    -webkit-appearance: none;
+    appearance: none;
+    font-size: 1.1em;
+    
+}
+.container_email > select:focus{
+    outline: none;
+    box-shadow: 0 0 5px -1px #AA45BB;
+}
+.container_email > select > option{
+    background-color: #760788;
+    outline: none;
+    color: #ffffff;
+}
+.container_email > .arrow_down{
+    width: 12px;
+    position: absolute;
+    top: 52px;
+    right: 28px;
+    z-index: 1;
 }
 .container_form_Email > form > .container_email > label{
     padding: 5px 0px;
@@ -229,14 +270,15 @@ hr{
     outline: none;
     border:  2px solid #760788;
     border-radius: 5px;
-    padding: 10px;
+    padding: 4px 15px;
+    font-size: 1.1em;
 }
 .container_form_Email > form > .container_title_form > h2{
     color: #AA45BB;
     font-weight: 900;
     font-size: 2em;
 }
-.container_form_Email > form > .contaienr_actions > button{
+.container_form_Email > form > .contaienr_actions > .next_page{
     display: block;
     width: 130px;
     padding: 5px 25px;
@@ -249,23 +291,46 @@ hr{
     cursor: pointer;
     transition-property: background-color;
     transition-duration: 0.3s;
+    text-align: center;
 }
-.container_form_Email > form > .contaienr_actions > button:hover{
-    background-color: #AA45BB;
-}
-.container_form_Email > form > .contaienr_actions > button >a{
-    color: #ffffff;
-}
-
-.container_form_Email > form > .contaienr_actions > a{
-    width: 100%;
-    margin: 0 27%;
-    color: #AA45BB;
-}
-.container_form_Email > form > .contaienr_actions > a:hover{
+.container_form_Email > form > .contaienr_actions > .dont_have_account{
     color: #760788;
+    margin-left: 28%;
+}
+.container_form_Email > form > .contaienr_actions > .dont_have_account:hover{
     text-decoration: underline;
 }
+.container_form_Email > form > .contaienr_actions > .next_page:hover{
+    background-color: #AA45BB;
+}
+.container_password{
+    position: relative;
+}
+
+.hidden_password{
+    display: block;
+}
+.hidden_password_show{
+    display: none;
+}
+.hidden_password_hidden{
+    display: none;
+}
+.hidden_password_show_password{
+    display: block;
+}
+.container_image_hidden_show_password{
+    position: absolute;
+    left: 78%;
+    top: 41.5%;
+}
+.container_image_hidden_show_password > img{
+    width: 28px;
+    position: absolute;
+    left: 50px;
+    cursor: pointer;
+}
+
 .contaienr_actions_2{
     width: 100%;
 }
@@ -289,7 +354,7 @@ hr{
     margin-top: -100px !important;
 }
 .container_image_main_view_2 > img{
-    height: 1100px !important;
+    height: 1060px !important;
 }
 
 /* Home Patient Page */
@@ -305,7 +370,7 @@ hr{
     padding: 20px;
 }
 .container_nav_image_patient > .container_image{
-    width: 25%;
+    width: 20%;
 }
 .container_nav_image_patient > .container_image > img{
     width: 120px;
@@ -341,6 +406,14 @@ hr{
     margin: 10px 30px;
     font-size: 1.26em;
     color: #000000;
+    border-radius: 5px;
+    border: 1px solid #ffffff;
+    transition-property: border-color;
+    transition-duration: 0.3s;
+}
+.container_nav_principal > li > a:hover{
+    border-color: #760788;
+
 }
 .home_information{
     color: #000000;
@@ -359,3 +432,255 @@ hr{
     margin-top: 40px;
     margin-left: 30px;
 }
+.container_ico_arrow > img{
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    transition-property: transform;
+    transition-duration: 0.3s;
+}
+.container_ico_arrow{
+    position: absolute;
+    top: 64px;
+    right: 40px;
+    text-align: right;
+}
+.container_ico_arrow > img{
+    position: relative;
+    right: 25px;
+}
+.arrow_image{
+    transform: rotate(180deg);
+}
+.container_nav_options_no_visible{
+    display: none;
+}
+.container_nav_options{
+    display: block;
+    position: relative;
+    top: 30px;
+    border-radius: 5px;
+    right: 20px;
+    width: 200px;
+    padding: 10px 20px;
+    background-color: #AA45BB;
+    height: auto;
+    border: 2px solid #000000;
+
+}
+.container_nav_options > ul > li{
+    padding: 10px 0;
+    margin: 10px 0;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #760788;
+    border: 1px solid #000000;
+}
+.container_nav_options > ul > li:hover{
+    background-color: #ffffff;
+}
+.container_nav_options > ul > li > a {
+    color: #ffffff;
+    padding: 10px 40px;
+}
+.container_nav_options > ul > li > a:hover {
+    color: #000000;
+
+    padding: 5% 40px;
+}
+
+
+.container_title_profile{
+    width: 100%;
+    height: 100px;
+    margin-top: 1%;
+    background-color: #760788;
+    border-left: 15px solid #000000;
+}
+.container_title_profile > h2{
+    width: 200px;
+    position: absolute;
+    top: 180px;
+    left: 90px;
+    color: #ffffff;
+    font-size: 2em;
+}
+.container_profile_photo{
+    width: 40%;
+    height: 180px;
+    background-color: #760788;
+    margin-top: 2%;
+    display: flex;
+    margin-left: 8%;
+    border-radius: 22px 75px 75px 22px;
+}
+.container_image_profile_edit{
+    width: 135px;
+    height: 135px;
+    border-radius: 70px;
+    background-color: #ffffff;
+    margin-left: 15%;
+    margin-top: 3.5%;
+}
+.container_image_profile_edit > img{
+    width: 110px;
+    height: 110px;
+    border-radius: 80px;
+    margin-top: 9.3%;
+    margin-left: 9.5%;
+}
+.container_name_profile_edit{
+    width: 350px;
+    margin-top: 13%;
+    margin-left: 3%;
+    color: #ffffff;
+    font-size: 1.2em;
+}
+
+.container_information{
+    width: 80%;
+}
+
+.container_information{
+    width: 80%;
+    margin: 2% 8.2%;
+}
+.container_information > .container_input_label_information{
+    width: 100%;
+    padding: 20px 0px;
+    display: flex;
+}
+.container_information > .container_input_label_information > label{
+    font-size: 1.3em;
+    width: 50%;
+}
+.container_information > .container_input_label_information > label > h3{
+    margin-left: 5%;
+    margin-top: 3px;
+    font-weight:normal;
+}
+.container_information > .container_input_label_information > input,
+.container_information > .container_input_label_information > select{
+    width: 50%;
+    height: 40px;
+    border-radius: 8px;
+    outline: none;
+    background-color: #AA45BB;
+    color: #ffffff;
+    border: none;
+    font-size: 1.2em;
+    padding: 0 20px;
+}
+.container_information > hr{
+    margin-top: 0px;
+}
+.container_input_label_information > a{
+    width: 150px;
+    background-color: #760788;
+    margin: 0 20px;
+    font-size: 1.2em;
+    color: #ffffff;
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px 0;
+    transition-property: color,background-color;
+    transition-duration: 0.3s;
+}
+.container_input_label_information_buttons{
+    width: 400px !important;
+    position: relative;
+    left: 38%;
+    top: 10px;    
+}
+.container_input_label_information > .cancel_button_information{
+    background-color: transparent;
+    color: #AA45BB;
+    border: 1px solid #760788; 
+}
+.container_input_label_information > a:hover{
+    color: #ffffff;
+    background-color: #AA45BB;   
+}
+
+/* Home Page patient */
+
+.container_title_profile > h2{
+    width: 400px;
+}
+.container_appointment{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+.container_appointment > .container_general_appointment,
+.container_appointment > .container_special_appointment
+{
+    width: 50%;
+    padding: 50px 0px;
+    text-align: center;
+}
+.container_appointment > .container_general_appointment > img,
+.container_appointment > .container_special_appointment > img{
+    width: 500px;
+}
+.container_appointment > .container_general_appointment > h4,
+.container_appointment > .container_special_appointment > h4{
+    font-size: 2em;
+}
+.container_appointment > .container_general_appointment > h4 > a,
+.container_appointment > .container_special_appointment > h4 > a{
+    color: #000000;
+    transition-property: color;
+    transition-duration: 0.3s;
+}
+.container_appointment > .container_general_appointment > h4 > a:hover,
+.container_appointment > .container_special_appointment > h4 > a:hover{
+    color: #760788;
+}
+
+/* General Appointment Page */
+
+.container_general_appointment_request{
+    width: 100%;
+    height: auto;
+}
+.container_general_appointment_2{
+    width: 80%;
+    height: auto;
+    margin: 5% auto;
+    border: 2px solid #760788;
+    padding: 50px;
+    border-radius: 5px;
+}
+.container_general_appointment_2 > .container_title_general_appointment{
+    width: 100%;
+}
+.container_general_appointment_2 > .container_title_general_appointment > h3{
+    font-size: 2em;
+    color: #760788;
+}
+.container_general_appointment_2 > .container_information_schedule {
+    margin: 5% 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+.container_general_appointment_2 > .container_information_schedule > .container_information_doctor{
+    text-align: center;
+}
+.container_general_appointment_2 > .container_information_schedule > .container_information_doctor > img{
+    width: 180px;
+    height: 180px;
+    border-radius: 100px; 
+}
+.container_general_appointment_2 > .container_information_schedule > .container_information_doctor > h5{
+    font-size: 1.4em;
+    margin-top: 10%;
+}
+.container_general_appointment_2 > .container_information_schedule > .container_information_doctor > p{
+    font-size: 1.3em;
+    margin-top: 5%;
+}
+
+
+/* Special Appointment Page */

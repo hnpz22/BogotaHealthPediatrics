@@ -21,7 +21,7 @@
                     <ul>
                         <div class="container_nav_principal">
                             <li>
-                                <a href="" class="home_information">Home</a>
+                                <a href="./home_patient.html" class="home_information">Home</a>
                             </li>
                             <li>
                                 <a href="">Patient Scheduling</a>
@@ -39,8 +39,18 @@
                                     <div class="container_name_patient">
                                         <h3>Brayan Arango</h3>
                                     </div>
-                                    <div>
-                                        <img src="" alt="Flecha Desplegable">
+                                    <div class="container_ico_arrow">
+                                        <img id="arrowImage" class="" src="../assets/img/flecha-hacia-abajo-para-navegar.png" alt="Flecha Desplegable">
+                                        <div id="containerNavOptions" class="container_nav_options_no_visible">
+                                            <ul>
+                                                <li>
+                                                    <a href="./home_patient_Information.html">Profile</a>
+                                                </li>
+                                                <li>
+                                                    <a href="./log_in.html">Get Out</a>
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                             </li>
@@ -51,74 +61,37 @@
         </div>
     </header>
     <main>
-        <div class="container_title_profile">
-            <h2>Profile</h2>
+        <div class="container_title_profile container_title_home">
+            <h2>Appointment Request</h2>
         </div>
-        <div class="container_profile_photo">
-            <div>
-                <img src="" alt="Imagen de Perfil">
+        <div class="container_appointment">
+            <div class="container_general_appointment">
+                <img src="../assets/img/general appointment.jpg" alt="Imagen de Cita General">
+                <h4><a href="./general_appointment.html">General Appointment</a></h4>
             </div>
-            <div>
-                <h3>Brayan Stiven Arango Romero</h3>
-            </div>
-        </div>
-
-        <div class="container_information">
-            <div>
-                <label for="Id">ID</label>
-                <input type="text" name="Id">
-            </div>
-            <hr>
-            <div>
-                <label for="typeId">ID Type</label>
-                <select name="typeId" id="">
-                    <option value=""></option>
-                    <option value="">CC</option>
-                    <option value="">TI</option>
-                    <option value="">CE</option>
-                    <option value="">Passport</option>
-                </select>
-            </div>
-            <hr>
-            <div>
-                <label for="names">Nombres</label>
-                <input type="text" name="names">
-            </div>
-            <hr>
-            <div>
-                <label for="lastName">Apellidos</label>
-                <input type="text" name="lastName">
-            </div>
-            <hr>
-            <div>
-                <label for="gender">Gender</label>
-                <select name="gender" id="">
-                    <option value=""></option>
-                    <option value="">Male</option>
-                    <option value="">Female</option>
-                </select>
-            </div>
-            <hr>
-            <div>
-                <label for="adress">Adress</label>
-                <input type="text" name="adress">
-            </div>
-            <hr>
-            <div>
-                <label for="phoneNumber">Phone Number</label>
-                <input type="text" name="phoneNumber">
-            </div>
-            <hr>
-            <div>
-                <label for="city">City</label>
-                <input type="text" name="city">
-            </div>
-            <hr>
-            <div>
-                <label for="birthDay">BirthDay</label>
-                <input type="date" name="birthDay">
+            <div class="container_special_appointment">
+                <img src="../assets/img/special appointment.jpg" alt="Imagen de Cita Especial">
+                <h4><a href="./special_appointment.html">Special Appointment</a></h4>
             </div>
         </div>
     </main>
+    <footer class="footer_main_page">
+        <ul>
+            <li>
+                <a href="">Privacy Polity</a>
+            </li>
+            <li>
+                <a href="../pages/sign_in.html">Registration Form</a>
+            </li>
+            <li>
+                <a href="">Document</a>
+            </li>
+        </ul>
+        <hr>
+        <div class="container_right">
+            <p>@ 2023 Bogota's Health Pediatric. All rights reserved</p>    
+        </div>   
+    </footer>
+    <script type="module" src="../dist/main.js"></script>
 </body>
 </html>

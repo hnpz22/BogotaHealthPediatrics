@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../assets/img/Logo Ico.ico" type="image/x-icon">
+    <title>Bogota's Health Pediatric</title>
+</head>
+<body class="body_main_patient">
+    <header class="header_main_patient">
+        <div class="container_nav_image_patient">
+            <div class="container_image">
+                <img src="../assets/img/Logo entidad de salud 1.png" alt="Logo del Hospital">
+            </div>
+            <div class="container_nav_bar_patient">
+                <nav class="nav_bar_patient">
+                    <ul>
+                        <div class="container_nav_principal">
+                            <li>
+                                <a href="./home_patient.html" class="home_information">Home</a>
+                            </li>
+                            <li>
+                                <a href="">Patient Scheduling</a>
+                            </li>
+                            <li>
+                                <a href="">Contact Us</a>
+                            </li>
+                        </div>
+                        <div class="container_profile">
+                            <li>
+                                <div class="container_profile_image_name">
+                                    <div class="container_image_patient">
+                                        <img src="../assets/img/hombre_perfil.jpg" alt="Imagen del Paciente">
+                                    </div>
+                                    <div class="container_name_patient">
+                                        <h3>Brayan Arango</h3>
+                                    </div>
+                                    <div class="container_ico_arrow">
+                                        <img src="../assets/img/flecha-hacia-abajo-para-navegar.png" alt="Flecha Desplegable">
+                                    </div>
+                                </div>
+                            </li>
+                        </div>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container_title_profile">
+            <h2>Profile</h2>
+        </div>
+        <div class="container_profile_photo">
+            <div class="container_image_profile_edit">
+                <img src="../assets/img/hombre_perfil.jpg" alt="Imagen de Perfil">
+            </div>
+            <div class="container_name_profile_edit">
+                <h3>Brayan Stiven Arango Romero</h3>
+            </div>
+        </div>
+
+        <div class="container_information">
+            <div class="container_input_label_information">
+                <label for="Id"><h3>ID</h3></label>
+                <input type="text" name="Id">
+            </div>
+            <hr>
+            <div class="container_input_label_information">
+                <label for="typeId"><h3>ID Type</h3></label>
+                <select name="typeId" id="">
+                    <option value=""></option>
+                    <option value="">CC</option>
+                    <option value="">TI</option>
+                    <option value="">CE</option>
+                    <option value="">Passport</option>
+                </select>
+            </div>
+            <hr>
+            <div class="container_input_label_information">
+                <label for="names"><h3>Nombres</h3></label>
+                <input type="text" name="names">
+            </div>
+            <hr>
+            <div class="container_input_label_information">
+                <label for="lastName"><h3>Apellidos</h3></label>
+                <input type="text" name="lastName">
+            </div>
+            <hr>
+            <div class="container_input_label_information">
+                <label for="gender"><h3>Gender</h3></label>
+                <select name="gender" id="">
+                    <option value=""></option>
+                    <option value="">Male</option>
+                    <option value="">Female</option>
+                </select>
+            </div>
+            <hr>
+            <div class="container_input_label_information">
+                <label for="adress"><h3>Adress</h3></label>
+                <input type="text" name="adress">
+            </div>
+            <hr>
+            <div class="container_input_label_information">
+                <label for="phoneNumber"><h3>Phone Number</h3></label>
+                <input type="text" name="phoneNumber">
+            </div>
+            <hr>
+            <div class="container_input_label_information">
+                <label for="city"><h3>City</h3></label>
+                <input type="text" name="city">
+            </div>
+            <hr>
+            <div class="container_input_label_information">
+                <label for="birthDay"><h3>BirthDay</h3></label>
+                <input type="date" name="birthDay">
+            </div>
+            <div class="container_input_label_information container_input_label_information_buttons">
+                <a class="cancel_button_information" href="">Cancel</a>
+                <a href="">Save</a>
+            </div>
+        </div>
+    </main>
+    <script type="module" src="../dist/main.js"></script>
+</body>
+</html>

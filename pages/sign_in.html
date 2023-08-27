@@ -77,6 +77,7 @@
                                 <option value="">CE</option>
                                 <option value="">Passport</option>
                             </select>
+                            <img class="arrow_down" src="../assets/img/down-arrow_266.png" alt="">
                         </div>                    
                         <div class="container_email">
                             <label for="numberId">ID*</label>
@@ -89,51 +90,23 @@
                                 <option value="">Patient</option>
                                 <option value="">Doctor</option>
                             </select>
+                            <img class="arrow_down" src="../assets/img/down-arrow_266.png" alt="">
                         </div>
                         <div class="container_password">
-                            <label for="">Password*</label>
+                            <label for="password">Password*</label>
                             <input type="password" name="password" id="password">
-                            <div>
-                                <img src="" alt="Mostrar / Ocultar Contraseña">
+                            <div class="container_image_hidden_show_password">
+                                <img id="showPassword2" class="hidden_password" src="../assets/img/ocultar.png" alt="Mostrar / Ocultar Contraseña"> 
+                                <img id="hiddenPassword2" class="hidden_password_show" src="../assets/img/mostrar.png" alt="Mostrar / Ocultar Contraseña"> 
                             </div>
                         </div>                       
                         <div class="contaienr_actions">
-                            <button type="submit"><a href="">Sign In</a></button>
+                            <a class="next_page" href="./home_patient.html">Sign In</a>
                         </div>
                     </form>
                 </div>
             </div>
-    
-            <!-- <div class="container_sign_in_email">
-                <div class="container_form_Email">
-                    <form action="" class="form_email">
-                        <div class="container_title_form">
-                            <h2>Sign In</h2>
-                        </div>
-                        <div class="container_sign_in_google">
-                            <a href="">Log In with Google</a>
-                        </div>
-                        <div class="separtor_line">
-                            <div class="line_1"></div>
-                            <p>
-                                or
-                            </p>
-                            <div class="line_2"></div>
-                        </div>
-                        <div class="container_password">
-                            <label for="">Password*</label>
-                            <input type="password" name="password" id="password">
-                            <div>
-                                <img src="" alt="Mostrar / Ocultar Contraseña">
-                            </div>
-                        </div>
-                        <div class="container_actions_2">
-                            <a class="" href="" >Back</a>
-                            <a href="">Log In</a>
-                        </div>
-                    </form>
-                </div>
-            </div> --> 
+
             <div class="container_image_main_view container_image_main_view_2">
                 <img src="../assets/img/Imagen Fondo.png" alt="Imágen de Pasillo del Hospital">
             </div>
@@ -157,5 +130,6 @@
             <p>@ 2023 Bogota's Health Pediatric. All rights reserved</p>    
         </div>   
     </footer>
+    <script type="module" src="../dist/main.js"></script>
 </body>
 </html>
