@@ -665,12 +665,12 @@ hr{
     display: flex;
     justify-content: space-evenly;
 }
-.container_general_appointment_2 > .container_information_schedule > .container_information_doctor{
+/* .container_general_appointment_2 > .container_information_schedule > .container_information_doctor{
     text-align: center;
-}
+} */
 .container_general_appointment_2 > .container_information_schedule > .container_information_doctor > img{
-    width: 180px;
-    height: 180px;
+    width: 100px;
+    height: 100px;
     border-radius: 100px; 
 }
 .container_general_appointment_2 > .container_information_schedule > .container_information_doctor > h5{
@@ -682,5 +682,30 @@ hr{
     margin-top: 5%;
 }
 
+.calendar_main{
+    margin: 0 2%;
+    border: solid 2px #760788;
+    color: #760788;
+    border-radius: 5px;
+    
+
+}
+.calendar_main > h3{
+    font-size: 3em;
+    text-align: center;
+    
+}
+
+
+.calendar_body{
+    padding: 3px;
+    margin: 0.5% 3% 3% 4%;
+    border: solid 2px #760788;
+    border-radius: 5px;
+}
+
+#calendar{
+    color: #760788;
+}
 
 /* Special Appointment Page */
