@@ -24,3 +24,4 @@ btnReturnEmailToPassword?.addEventListener('click', showContainerPasswordAndHide
 btnImage?.addEventListener('click', showContainerOptionsNav);
 
 
+    
