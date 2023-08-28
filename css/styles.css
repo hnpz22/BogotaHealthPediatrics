@@ -356,6 +356,83 @@ hr{
 .container_image_main_view_2 > img{
     height: 1060px !important;
 }
+.container_email > textarea{
+    min-width: 450px;
+    min-height: 200px;
+    max-width: 450px;
+    max-height: 200px;
+    outline: none;
+    border: 2px solid #760788;
+    border-radius: 10px;
+    font-size: 1.2em;
+    padding: 10px 20px;
+}
+.form_contact > hr{
+    background-color: #000000;
+}
+.container_sign_in_email_3{
+    margin: -50px auto -3.8%;
+}
+.container_email > img{ 
+    position: absolute;
+    top: 44.5px;
+    right: 30px;
+    width: 23px;
+    display: none;
+}
+.form_contact > .container_email > p{
+    color: #ff0000;
+    display:none;
+}
+.messaje_error_alert{
+    display: block !important;
+}
+.container_message_error{
+    width: 90%;
+    margin: 2% auto;
+    display: flex;
+    height: 40px;
+    background-color: #ff0000;
+    border-radius: 5px;
+    display: none;
+}
+.contaienr_actions > p{
+    display: none;
+}
+.container_messaje_error_active{
+    display: block !important;
+}
+.container_message_error > p{
+    color: #000000;
+    padding: 10px 20px 0 5px;
+
+}
+.container_message_error > img{
+    width: 30px;
+    height: 30px;
+    margin: 4px;
+    margin-left: 30px;
+}
+.messageSuccess{
+    display: block !important;
+    padding: 0px 120px ;
+    color: #00ff51 !important;
+}
+.is_valid_information{
+    display: flex !important;
+}
+.is_invalid_information{
+    border: 3px solid #ff0000 !important;
+}
+.show_image_invalid{
+    display: block !important;
+}
+.show_image_invalid{
+    display: block !important;
+}
+.show_image_valid{
+    display: block !important;
+}
 
 /* Home Patient Page */
 

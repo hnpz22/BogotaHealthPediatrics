@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../assets/img/Logo Ico.ico" type="image/x-icon">
+    <title>Log Into Bogota's Health Pediatric</title>
+
+</head>
+<body class="body_main">
+    <header class="header_main">
+        <div class="container_nav_image">
+            <div class="container_image_and_name">
+                <div class="image_logo">
+                    <img src="../assets/img/Logo entidad de salud 1.png" alt="Logo del Hospital">
+                </div>
+                <div class="name_hospital">
+                    <h2>Bogota's Health Pediatric</h2>
+                </div>
+            </div>
+            <div class="container_nav_bar">
+                <nav class="nav_bar">
+                    <ul>
+                        <li>
+                            <a href="../index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="">Contact Us</a>
+                        </li>
+                        <li>
+                            <a href="./log_in.html" class="">Log In</a>
+                        </li>
+                        <li>
+                            <a href="./sign_in.html" class="button_sign_in">Sign In</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container_main_view">
+            <div class="container_sign_in_email container_sign_in_email_3">
+                <div class="container_form_Email">
+                    <form id="formContact" action="" class="form_email form_contact">
+                        <div class="container_title_form">
+                            <h2>Contact Form</h2>
+                        </div>
+                        <hr>
+                        <div id="groupName" class="container_email">
+                            <label for="name">Name*</label>
+                            <input type="text" name="name" id="nameForm" placeholder="Juan">
+                            <img id="imagenWrong" src="../assets/img/x.png" alt="">
+                            <img id="imageChecked" src="../assets/img/check-good.png" alt="">
+                            <p id="formMessageErrorP" class="form_input_name_error">*You must put a valid name.</p>
+                        </div>
+                        
+                        <div id="groupLastName" class="container_email">
+                            <label for="lastName">Last Name*</label>
+                            <input type="text" name="lastName" id="lastNameForm" placeholder="Perez">
+                            <img id="imagenWrong" src="../assets/img/x.png" alt="">
+                            <img id="imageChecked" src="../assets/img/check-good.png" alt="">
+                            <p id="formMessageErrorP" class="form_input_name_error">*You must put a valid lastname.</p>                                       
+                        </div> 
+                        
+                        <div id="groupMail" class="container_email">
+                            <label for="email">Email*</label>
+                            <input type="email" name="email" id="mailForm" placeholder="example@gmail.com">
+                            <img id="imagenWrong" src="../assets/img/x.png" alt="">
+                            <img id="imageChecked" src="../assets/img/check-good.png" alt="">
+                            <p id="formMessageErrorP" class="form_input_name_error">*You must put a valid mail.</p>
+                        </div>
+                        
+                        <div id="groupTelephone" class="container_email">
+                            <label for="telephone">Number Phone*</label>
+                            <input type="text" name="telephone" id="telephoneForm">
+                            <img id="imagenWrong" src="../assets/img/x.png" alt="">
+                            <img id="imageChecked" src="../assets/img/check-good.png" alt="">
+                            <p id="formMessageErrorP" class="form_input_name_error">*You must put a valid phone number .</p>  
+                        </div>
+                        
+                        <div id="groupMsn" class="container_email">
+                            <label for="msn">Leave us your message*</label>
+                            <textarea id="msnContactForm" 
+                                        name="msn"
+                                        rows="8" 
+                                        cols="50" 
+                                        class="msn" 
+                                        placeholder="Escribe tu Mensaje" 
+                                        required>
+                            </textarea>
+                            <p id="formMessageErrorP" class="form_input_name_error">*The message doesn't meet with the requeriments. </p>
+                        </div>
+                        <div id="GroupContainerMessageError"  class="container_message_error">
+                            <img src="../assets/img/precaucion.png" alt="">
+                            <p>*Error, please fill all the fields form.</p>
+                        </div>
+                        <div id="GroupContainerActions" class="contaienr_actions">
+                            <button type="submit" id="sendBtn" class="next_page">Send</button>       
+                            <p id="formMessageSuccess" >*Message sent Successfully</p>
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+
+            <div class="container_image_main_view container_image_main_view_2">
+                <img src="../assets/img/Imagen Fondo.png" alt="Imágen de Pasillo del Hospital">
+            </div>
+        </div>
+
+    </main>
+    <footer class="footer_main_page">
+        <ul>
+            <li>
+                <a href="">Privacy Polity</a>
+            </li>
+            <li>
+                <a href="../pages/sign_in.html">Registration Form</a>
+            </li>
+            <li>
+                <a href="">Document</a>
+            </li>
+        </ul>
+        <hr>
+        <div class="container_right">
+            <p>@ 2023 Bogota's Health Pediatric. All rights reserved</p>    
+        </div>   
+    </footer>
+    <script type="module" src="../dist/main.js"></script>
+</body>
+</html>
